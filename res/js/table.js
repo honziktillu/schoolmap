@@ -18,7 +18,7 @@ export default class Table {
     drawInfo(ctx, room) {
         if (!room) return;
         ctx.fillStyle = "black";
-        ctx.font = "20px serif";
+        ctx.font = "20px 'Honk', system-ui";
         ctx.fillText(room.name, this.x + this.width * 0.28, this.y + this.height * 0.5);
         ctx.fillText(room.teachers, this.x + this.width * 0.28, this.y + this.height * 0.65);
     }
