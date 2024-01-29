@@ -1,0 +1,20 @@
+[
+  {
+    "id": 30,
+    "name": "Učebna 30",
+    "x": 500,
+    "y": 100,
+    "width": 400,
+    "height": 200,
+    "teachers": ["Till", "Esch"]
+  },
+  {
+    "id": 31,
+    "name": "Učebna 31",
+    "x": 100,
+    "y": 100,
+    "width": 400,
+    "height": 200,
+    "teachers": ["Svobodova"]
+  }
+]
