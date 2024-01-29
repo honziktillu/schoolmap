@@ -28,5 +28,35 @@
     "height": 50,
     "teachers": ["Svobodova"],
     "fontSize": 20
+  },
+  {
+    "id": 40,
+    "name": "Učebna 40",
+    "x": 500,
+    "y": 300,
+    "width": 50,
+    "height": 150,
+    "teachers": ["Sodoma"],
+    "fontSize": 20
+  },
+  {
+    "id": 42,
+    "name": "Tělocvična",
+    "x": 700,
+    "y": 300,
+    "width": 250,
+    "height": 150,
+    "teachers": ["Schejbal"],
+    "fontSize": 20
+  },
+  {
+    "id": 41,
+    "name": "Kabinet 41",
+    "x": 700,
+    "y": 250,
+    "width": 50,
+    "height": 50,
+    "teachers": ["Zakopová", "Kovaasdashcasnkcová"],
+    "fontSize": 20
   }
 ]

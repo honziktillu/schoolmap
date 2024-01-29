@@ -3,4 +3,6 @@
 html, body {
     margin: 0;
     background-color: black;
+    min-height: 100vh;
+    overflow: hidden;
 }

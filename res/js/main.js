@@ -11,8 +11,9 @@ let oldRoom = undefined;
 let newRoom = undefined;
 
 canvas.addEventListener("click", (e) => {
-  const x = e.clientX;
-  const y = e.clientY;
+  const x = e.offsetX;
+  const y = e.offsetY;
+  console.log(e);
   detectRoomClick({ x: x, y: y, w: 2, h: 2 });
 });
 
@@ -42,15 +43,16 @@ const animationLoop = () => {
 };
 
 const clear = () => {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
   ctx.fillStyle = "white";
-  ctx.fillRect(0, 0, 1280, 720);
+  ctx.fillRect(0, 0, canvas.width , canvas.height);
 };
 
 const draw = () => {
   Room.rooms.map((room) => {
     room.draw(ctx);
   });
-  console.log(newRoom);
   if (activeRoom) tableInfo.draw(ctx, newRoom)
 };
 
