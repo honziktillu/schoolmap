@@ -28,7 +28,8 @@ const loadData = async () => {
         room.width,
         room.height,
         room.name,
-        room.teachers
+        room.teachers,
+        room.fontSize
       )
     );
   });

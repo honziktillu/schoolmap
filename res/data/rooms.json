@@ -2,19 +2,31 @@
   {
     "id": 30,
     "name": "Učebna 30",
-    "x": 500,
+    "x": 400,
     "y": 100,
-    "width": 400,
-    "height": 200,
-    "teachers": ["Till", "Esch"]
+    "width": 150,
+    "height": 50,
+    "teachers": ["Till", "Esch"],
+    "fontSize": 20
   },
   {
     "id": 31,
     "name": "Učebna 31",
+    "x": 250,
+    "y": 100,
+    "width": 150,
+    "height": 50,
+    "teachers": ["Svobodova"],
+    "fontSize": 20
+  },
+  {
+    "id": 32,
+    "name": "Učebna 32",
     "x": 100,
     "y": 100,
-    "width": 400,
-    "height": 200,
-    "teachers": ["Svobodova"]
+    "width": 150,
+    "height": 50,
+    "teachers": ["Svobodova"],
+    "fontSize": 20
   }
 ]

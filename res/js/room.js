@@ -1,7 +1,7 @@
 export default class Room {
   static rooms = [];
 
-  constructor(id, x, y, width, height, name, teachers) {
+  constructor(id, x, y, width, height, name, teachers, fontSize) {
     this.id = id;
     this.x = x;
     this.y = y;
@@ -14,6 +14,7 @@ export default class Room {
     this.defaultColor = dC;
     this.neonColor = [30, 177, 235]
     this.defaultNeonColor = [30, 177, 235]
+    this.fontSize = fontSize;
   }
 
   draw(ctx) {
@@ -22,10 +23,11 @@ export default class Room {
     //ctx.strokeRect(this.x, this.y, this.width, this.height);
     this.neonStroke(ctx, ...this.neonColor);
     ctx.fillStyle = this.color;
-    ctx.font = "40px 'Honk', system-ui";
+    ctx.font = `${this.fontSize}px 'Honk', system-ui`;
+    ctx.textAlign = 'center';
     ctx.fillText(
       this.name,
-      this.x + this.width * 0.28,
+      this.x + this.width * 0.5,
       this.y + this.height / 2
     );
     ctx.restore();
